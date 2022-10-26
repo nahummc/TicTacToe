@@ -73,6 +73,19 @@ namespace TicTacToe
         //    }
         //}
 
+        private void reset_board()
+        {
+            bx1.Text = "";
+            bx2.Text = "";
+            bx3.Text = "";
+            bx4.Text = "";
+            bx5.Text = "";
+            bx6.Text = "";
+            bx7.Text = "";
+            bx8.Text = "";
+            bx9.Text = "";
+        }
+
         public void check_win()
 
 
@@ -138,15 +151,7 @@ namespace TicTacToe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bx1.Text = "";
-            bx2.Text = "";
-            bx3.Text = "";
-            bx4.Text = "";
-            bx5.Text = "";
-            bx6.Text = "";
-            bx7.Text = "";
-            bx8.Text = "";
-            bx9.Text = "";
+            reset_board();
         }
 
         private void bx1_Click(object sender, EventArgs e)
