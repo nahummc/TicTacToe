@@ -91,56 +91,65 @@ namespace TicTacToe
 
             // TODO
             // FIX THE WAY THE PROJECT READS THE WINNER
-
+           
 
         {
+            
             //handle horizontal cases
             if (bx1.Text != "" && bx1.Text == bx2.Text && bx2.Text == bx3.Text)
             {
                 string winner = bx2.Text;
                 MessageBox.Show("Game Over");
+                reset_board();
             }
             //2
             else if (bx4.Text != "" && bx4.Text == bx5.Text && bx5.Text == bx6.Text)
             {
                 string winner = bx2.Text;
                 MessageBox.Show("Game Over");
+                reset_board();
             }
             //3
             else if (bx7.Text != "" && bx7.Text == bx8.Text && bx8.Text == bx9.Text)
             {
                 string winner = bx2.Text;
                 MessageBox.Show("Game Over");
+                reset_board();
             }
             // handle vertical cases 1
             else if (bx1.Text != "" && bx1.Text == bx4.Text && bx4.Text == bx7.Text)
             {
                 string winner = bx2.Text;
                 MessageBox.Show("Game Over");
+                reset_board();
             }
             //2
             else if (bx2.Text != "" && bx2.Text == bx5.Text && bx5.Text == bx8.Text)
             {
                 string winner = bx2.Text;
                 MessageBox.Show("Game Over");
+                reset_board();
             }
             //3
             else if (bx3.Text != "" && bx3.Text == bx6.Text && bx6.Text == bx9.Text)
             {
                 string winner = bx2.Text;
                 MessageBox.Show("Game Over");
+                reset_board();
             }
             //diagonal 1
             else if (bx4.Text != "" && bx1.Text == bx5.Text && bx5.Text == bx9.Text)
             {
                 string winner = bx2.Text;
                 MessageBox.Show("Game Over");
+                reset_board();
             }
             //2
             else if (bx3.Text != "" && bx3.Text == bx5.Text && bx5.Text == bx7.Text)
             {
                 string winner = bx2.Text;
                 MessageBox.Show("Game Over");
+                reset_board();
             }
             else
             {
